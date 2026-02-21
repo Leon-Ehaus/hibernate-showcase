@@ -1,0 +1,548 @@
+Initialized native services in: /Users/leon.ehaus/.gradle/native
+Initialized jansi services in: /Users/leon.ehaus/.gradle/native
+Found daemon DaemonInfo{pid=29669, address=[0639fceb-b51a-469f-a2c3-6340c6cbf76f port:50316, addresses:[/127.0.0.1]], state=Idle, lastBusy=1771605570937, context=DefaultDaemonContext[uid=0e777f22-c3f6-4213-9b3a-161908fd8343,javaHome=/Users/leon.ehaus/Library/Java/JavaVirtualMachines/corretto-21.0.2/Contents/Home,javaVersion=21,javaVendor=Amazon.com Inc.,daemonRegistryDir=/Users/leon.ehaus/.gradle/daemon,pid=29669,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=DE,-Duser.language=de,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=/Users/leon.ehaus/.sdkman/candidates/java/21.0.3-tem (no Daemon JVM specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=DE, -Duser.language=de, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=0e777f22-c3f6-4213-9b3a-161908fd8343,javaHome=/Users/leon.ehaus/Library/Java/JavaVirtualMachines/corretto-21.0.2/Contents/Home,javaVersion=21,javaVendor=Amazon.com Inc.,daemonRegistryDir=/Users/leon.ehaus/.gradle/daemon,pid=29669,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=DE,-Duser.language=de,-Duser.variant]
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 63227). The daemon log file: /Users/leon.ehaus/.gradle/daemon/9.3.1/daemon-63227.out.log
+Starting 4th build in daemon [uptime: 1 mins 38.502 secs, performance: 100%, GC rate: 0.00/s, heap usage: 3% of 512 MiB, non-heap usage: 22% of 384 MiB]
+Using 8 worker leases.
+Operational build model parameters: {requiresToolingModels=false, parallelProjectExecution=false, configureOnDemand=false, configurationCache=false, configurationCacheParallelStore=false, configurationCacheParallelLoad=true, isolatedProjects=false, parallelProjectConfiguration=false, intermediateModelCache=false, parallelToolingApiActions=false, invalidateCoupledProjects=false, modelAsProjectDependency=false, resilientModelBuilding=false}
+Now considering [/Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase/settings.gradle'.
+Projects loaded. Root project using build file '/Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase/build.gradle'.
+Included projects: [root project 'hibernate-showcase']
+> Configure project :
+Evaluating root project 'hibernate-showcase' using build file '/Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase/build.gradle'.
+Caching disabled for Groovy DSL script compilation (cp_proj) because:
+  Build cache is disabled
+  Not worth caching.
+Compiling build file '/Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase/build.gradle' using SubsetScriptTransformer.
+Resolved plugin [id: 'java']
+Resource missing. [HTTP HEAD: https://plugins.gradle.org/m2/org/springframework/boot/org.springframework.boot.gradle.plugin/3.4.5/org.springframework.boot.gradle.plugin-3.4.5.jar]
+Resolved plugin [id: 'org.springframework.boot', version: '3.4.5']
+Resolved plugin [id: 'io.spring.dependency-management', version: '1.1.7']
+Downloading https://plugins.gradle.org/m2/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.jar to /Users/leon.ehaus/.gradle/.tmp/gradle_download3006441119878826122bin
+Downloading https://plugins.gradle.org/m2/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar to /Users/leon.ehaus/.gradle/.tmp/gradle_download12760154626902551290bin
+Downloading https://plugins.gradle.org/m2/org/springframework/boot/spring-boot-loader-tools/3.4.5/spring-boot-loader-tools-3.4.5.jar to /Users/leon.ehaus/.gradle/.tmp/gradle_download15249913172337376438bin
+Downloading https://plugins.gradle.org/m2/org/springframework/boot/spring-boot-gradle-plugin/3.4.5/spring-boot-gradle-plugin-3.4.5.jar to /Users/leon.ehaus/.gradle/.tmp/gradle_download6077727429962207781bin
+Downloading https://plugins.gradle.org/m2/org/springframework/boot/spring-boot-buildpack-platform/3.4.5/spring-boot-buildpack-platform-3.4.5.jar to /Users/leon.ehaus/.gradle/.tmp/gradle_download14385812355384768976bin
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/3.4.5/cdc64f50c17f590bc188e44d571b9326cbe06e93/spring-boot-gradle-plugin-3.4.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-buildpack-platform/3.4.5/308d47ea8b77e9ef9130887ffc37ab99ebd9e150/spring-boot-buildpack-platform-3.4.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/3.4.5/4133c40fac97fcaa812f5a881609bfd936f6140d/spring-boot-loader-tools-3.4.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.25.0/9d35aec423da6c8a7f93d7e9e1c6b1d9fe14bb5e/commons-compress-1.25.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/6.2.6/4639dac5fc46cb6a9f6eb2709decfb90313e0f2c/spring-core-6.2.6.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.18.3/7fa21cf7da4598f8240e4ebd9779249622af1acd/jackson-annotations-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.18.3/78f80c259268200e588aa204dd97ecf09b76916e/jackson-core-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.18.3/fa63ae5eb3956b1a6d7a7ead2b513af89dea22e7/jackson-module-parameter-names-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.18.3/537e3886263e3b3464385040453e92567fd509e2/jackson-databind-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.13.0/88e9a306715e9379f3122415ef4ae759a352640d/jna-platform-5.13.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.client5/httpclient5/5.4.3/2f3fc0687c6fa39b0aad7cf7c3cf171ec8ad009b/httpclient5-5.4.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/6.2.6/f4468f33de0015179abb6055964801bc962f8d51/spring-jcl-6.2.6.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.13.0/1200e7ebeedbe0d10062093f32925a912020e747/jna-5.13.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5-h2/5.3.4/3742a9a9ba3a5a0d45be230093b52a1302a561e2/httpcore5-h2-5.3.4.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for InstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5/5.3.4/ea47f0fe6e00ffb07cec3a0cb1bb801b1a9cc353/httpcore5-5.3.4.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/51d0dcffd2a0ccec01bdd063d1224c89/transformed/.gradle-instrumented-classpath.marker because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/51d0dcffd2a0ccec01bdd063d1224c89/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/f0eae0fc8c33e0329cd276c89d56cd07/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/b2711f3c7cd1f3d53306a9a9c940731f/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/fa3b1866ddc4af3eca1a6d850db9be5e/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/cb629cb3a91f89b122a6691014f490a3/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/fd721dd34a0560ed762df1f57c36b042/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/53ea37e1ae1c28e6a9063c5661334df6/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/92cd6fbf6ba7ec534b405e8084cdf463/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/f0eae0fc8c33e0329cd276c89d56cd07/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/cb629cb3a91f89b122a6691014f490a3/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/b2711f3c7cd1f3d53306a9a9c940731f/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/53ea37e1ae1c28e6a9063c5661334df6/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/fa3b1866ddc4af3eca1a6d850db9be5e/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/51d0dcffd2a0ccec01bdd063d1224c89/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/fd721dd34a0560ed762df1f57c36b042/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/92cd6fbf6ba7ec534b405e8084cdf463/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.18.3/7fa21cf7da4598f8240e4ebd9779249622af1acd/jackson-annotations-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/3.4.5/4133c40fac97fcaa812f5a881609bfd936f6140d/spring-boot-loader-tools-3.4.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/b0e53cb071ba040efa8af55daab8e660/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/3.4.5/cdc64f50c17f590bc188e44d571b9326cbe06e93/spring-boot-gradle-plugin-3.4.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-buildpack-platform/3.4.5/308d47ea8b77e9ef9130887ffc37ab99ebd9e150/spring-boot-buildpack-platform-3.4.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/2676b66bf7a9536fc1099836c0ae7208/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.25.0/9d35aec423da6c8a7f93d7e9e1c6b1d9fe14bb5e/commons-compress-1.25.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/b46e752be8b6e410d317b73d58749aa5/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.18.3/78f80c259268200e588aa204dd97ecf09b76916e/jackson-core-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/f0ad11dc5e199cd84655ce0d68606291/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.1.7/6afc1b5cbc631be173fe497b528d8154479e9371/dependency-management-plugin-1.1.7.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/89679d07e8817d65fba707983e60e41e/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/6.2.6/4639dac5fc46cb6a9f6eb2709decfb90313e0f2c/spring-core-6.2.6.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/1b818d700729e1ae5ade469e88b9b23b/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/f8ac81b526f359d56044b7cfebfe5c28/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/ed31da8ef8eb731cc30303918a0bac0d/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/f8ac81b526f359d56044b7cfebfe5c28/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.18.3/fa63ae5eb3956b1a6d7a7ead2b513af89dea22e7/jackson-module-parameter-names-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/4e251549d865e598068c97e971dfbf5e/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.18.3/fa63ae5eb3956b1a6d7a7ead2b513af89dea22e7/jackson-module-parameter-names-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/64781e1e5e38b9124a5b2426c5b052ff/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/64781e1e5e38b9124a5b2426c5b052ff/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.18.3/537e3886263e3b3464385040453e92567fd509e2/jackson-databind-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/8bb0ebaab61e4981d99552839dbfa9c7/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.18.3/7fa21cf7da4598f8240e4ebd9779249622af1acd/jackson-annotations-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/a54196799b9ab975ac439e16e8f8dd67/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/a54196799b9ab975ac439e16e8f8dd67/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.13.0/88e9a306715e9379f3122415ef4ae759a352640d/jna-platform-5.13.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/3.4.5/4133c40fac97fcaa812f5a881609bfd936f6140d/spring-boot-loader-tools-3.4.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/e3e1ae74ed4f57d2bcefbcbd07bb4aee/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/4f990538ca025b6277ac373553b3aa2f/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/4f990538ca025b6277ac373553b3aa2f/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/3.4.5/cdc64f50c17f590bc188e44d571b9326cbe06e93/spring-boot-gradle-plugin-3.4.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/9539dbcc3a6e2bed1020039ae400fc49/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.client5/httpclient5/5.4.3/2f3fc0687c6fa39b0aad7cf7c3cf171ec8ad009b/httpclient5-5.4.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/9539dbcc3a6e2bed1020039ae400fc49/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/98fc317273bcb7f484e9992f24075227/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.tomlj/tomlj/1.0.0/d1922fb5e672e04d8e8d8dac0b058b1897e6e940/tomlj-1.0.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-buildpack-platform/3.4.5/308d47ea8b77e9ef9130887ffc37ab99ebd9e150/spring-boot-buildpack-platform-3.4.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/85efed1791d0006e9160dcd21913fcbe/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/73c56062e6fa96895a1811c58159a427/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/85efed1791d0006e9160dcd21913fcbe/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/73c56062e6fa96895a1811c58159a427/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/6.2.6/f4468f33de0015179abb6055964801bc962f8d51/spring-jcl-6.2.6.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/f948b9fb94844f2fd765043e7e8093f4/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.13.0/1200e7ebeedbe0d10062093f32925a912020e747/jna-5.13.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/db4d04ccea91fc9da026eb9e36c2e5d3/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/6.2.6/f4468f33de0015179abb6055964801bc962f8d51/spring-jcl-6.2.6.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/faa59c91813fe51f4977923ba45ae126/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/faa59c91813fe51f4977923ba45ae126/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5-h2/5.3.4/3742a9a9ba3a5a0d45be230093b52a1302a561e2/httpcore5-h2-5.3.4.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/da6394f5500b251b1135837d0783dba4/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.13.0/1200e7ebeedbe0d10062093f32925a912020e747/jna-5.13.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/c9fef3e45f9e219e051e37613b8e0d3f/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/c9fef3e45f9e219e051e37613b8e0d3f/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5/5.3.4/ea47f0fe6e00ffb07cec3a0cb1bb801b1a9cc353/httpcore5-5.3.4.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/0eed27fd6dab104919e3e3c3de4a38da/transformed/merge/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5-h2/5.3.4/3742a9a9ba3a5a0d45be230093b52a1302a561e2/httpcore5-h2-5.3.4.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/d57751854d4b34a494cea3e0aefa9337/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.18.3/78f80c259268200e588aa204dd97ecf09b76916e/jackson-core-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/d57751854d4b34a494cea3e0aefa9337/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/32d681f6a629d1d3ac509ff3a14e1a19/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/32d681f6a629d1d3ac509ff3a14e1a19/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/174265d4d13baa25cca6eafb74d25626/transformed/analysis/instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/9.3.1/transforms/174265d4d13baa25cca6eafb74d25626/transformed/analysis/instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.7.2/e27d8ab4f984f9d186f54da984a6ab1cccac755e/antlr4-runtime-4.7.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.25.0/9d35aec423da6c8a7f93d7e9e1c6b1d9fe14bb5e/commons-compress-1.25.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.client5/httpclient5/5.4.3/2f3fc0687c6fa39b0aad7cf7c3cf171ec8ad009b/httpclient5-5.4.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.13.0/88e9a306715e9379f3122415ef4ae759a352640d/jna-platform-5.13.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5/5.3.4/ea47f0fe6e00ffb07cec3a0cb1bb801b1a9cc353/httpcore5-5.3.4.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/6.2.6/4639dac5fc46cb6a9f6eb2709decfb90313e0f2c/spring-core-6.2.6.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: /Users/leon.ehaus/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.18.3/537e3886263e3b3464385040453e92567fd509e2/jackson-databind-2.18.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Applying dependency management to configuration 'annotationProcessor' in project 'hibernate-showcase'
+Applying dependency management to configuration 'apiElements' in project 'hibernate-showcase'
+Applying dependency management to configuration 'archives' in project 'hibernate-showcase'
+Applying dependency management to configuration 'bootArchives' in project 'hibernate-showcase'
+Applying dependency management to configuration 'compileClasspath' in project 'hibernate-showcase'
+Applying dependency management to configuration 'compileOnly' in project 'hibernate-showcase'
+Applying dependency management to configuration 'default' in project 'hibernate-showcase'
+Applying dependency management to configuration 'developmentOnly' in project 'hibernate-showcase'
+Applying dependency management to configuration 'implementation' in project 'hibernate-showcase'
+Applying dependency management to configuration 'mainSourceElements' in project 'hibernate-showcase'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'hibernate-showcase'
+Applying dependency management to configuration 'runtimeClasspath' in project 'hibernate-showcase'
+Applying dependency management to configuration 'runtimeElements' in project 'hibernate-showcase'
+Applying dependency management to configuration 'runtimeOnly' in project 'hibernate-showcase'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'hibernate-showcase'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'hibernate-showcase'
+Applying dependency management to configuration 'testCompileClasspath' in project 'hibernate-showcase'
+Applying dependency management to configuration 'testCompileOnly' in project 'hibernate-showcase'
+Applying dependency management to configuration 'testImplementation' in project 'hibernate-showcase'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'hibernate-showcase'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'hibernate-showcase'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'hibernate-showcase'
+Caching disabled for Groovy DSL script compilation (proj) because:
+  Build cache is disabled
+  Not worth caching.
+Compiling build file '/Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase/build.gradle' using BuildScriptTransformer.
+All projects evaluated.
+Task name matched 'test'
+Selected primary task 'test' from project :
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/leon.ehaus/.gradle/daemon/9.3.1 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Resolving global dependency management for project 'hibernate-showcase'
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/3.4.5/spring-boot-dependencies-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download1396124876455505427bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/activemq/artemis-bom/2.37.0/artemis-bom-2.37.0.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download6237731004703953154bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/activemq/artemis-project/2.37.0/artemis-project-2.37.0.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download15685314211865088703bin
+Downloading https://repo.maven.apache.org/maven2/org/assertj/assertj-bom/3.26.3/assertj-bom-3.26.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download5803921488346624888bin
+Downloading https://repo.maven.apache.org/maven2/io/zipkin/reporter2/zipkin-reporter-bom/3.4.3/zipkin-reporter-bom-3.4.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download17323989851784004373bin
+Downloading https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/15.0.14.Final/infinispan-bom-15.0.14.Final.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download8192285481906493362bin
+Downloading https://repo.maven.apache.org/maven2/org/infinispan/infinispan-build-configuration-parent/15.0.14.Final/infinispan-build-configuration-parent-15.0.14.Final.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download12417311537217481608bin
+Downloading https://repo.maven.apache.org/maven2/org/eclipse/jetty/ee10/jetty-ee10-bom/12.0.19/jetty-ee10-bom-12.0.19.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download3559072310722116042bin
+Downloading https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/12.0.19/jetty-bom-12.0.19.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download6542416530798890323bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-bom/1.14.6/micrometer-bom-1.14.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download6093408529101914257bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-tracing-bom/1.4.5/micrometer-tracing-bom-1.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download11880349502629817518bin
+Downloading https://repo.maven.apache.org/maven2/org/mockito/mockito-bom/5.14.2/mockito-bom-5.14.2.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download10560917000558791973bin
+Downloading https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.119.Final/netty-bom-4.1.119.Final.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download12383193422066966616bin
+Downloading https://repo.maven.apache.org/maven2/io/opentelemetry/opentelemetry-bom/1.43.0/opentelemetry-bom-1.43.0.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download17182914544826955081bin
+Downloading https://repo.maven.apache.org/maven2/org/apache/pulsar/pulsar-bom/3.3.6/pulsar-bom-3.3.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download11127804760761534723bin
+Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/2024.0.5/reactor-bom-2024.0.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download16956340305523522241bin
+Downloading https://repo.maven.apache.org/maven2/io/rest-assured/rest-assured-bom/5.5.1/rest-assured-bom-5.5.1.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download13228338517700366890bin
+Downloading https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-bom/4.25.0/selenium-bom-4.25.0.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download4076542606497011531bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-bom/2024.1.5/spring-data-bom-2024.1.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download10850550476307768739bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/6.2.6/spring-framework-bom-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download5077919308946941379bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/6.4.4/spring-integration-bom-6.4.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download11108199373883431926bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/pulsar/spring-pulsar-bom/1.2.5/spring-pulsar-bom-1.2.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download17327055163003432712bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/6.4.5/spring-security-bom-6.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download740779813645410921bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/session/spring-session-bom/3.4.3/spring-session-bom-3.4.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download3112166921304073706bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/ws/spring-ws-bom/4.0.13/spring-ws-bom-4.0.13.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download1803523436257738046bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download12223248336849197624bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download6112838137960652318bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download1283926644703960080bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download9269651777128569340bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download7822274344561139852bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download10357093293771853479bin
+Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download10192570731903501171bin
+Downloading https://repo.maven.apache.org/maven2/org/postgresql/postgresql/42.7.5/postgresql-42.7.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download5986246081273573030bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/3.4.5/spring-boot-starter-test-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download4777727339280088542bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/3.4.5/spring-boot-starter-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download14881172437712789487bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/3.4.5/spring-boot-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download4445165233664093134bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.2.6/spring-core-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download13645054580414146254bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.2.6/spring-jcl-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download11260044824120915488bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.2.6/spring-context-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download2918748689766881501bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.2.6/spring-aop-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download7486713582719284076bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.2.6/spring-beans-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download10735828224071807651bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.2.6/spring-expression-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download10484721298308233669bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.6/micrometer-observation-1.14.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download5080597757749574522bin
+Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.6/micrometer-commons-1.14.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download9088187554876906160bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/3.4.5/spring-boot-autoconfigure-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download3623239510815308527bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/3.4.5/spring-boot-starter-logging-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download17134963532193285608bin
+Downloading https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download3103731536894317853bin
+Downloading https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download13868071868567077457bin
+Downloading https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/2.3/snakeyaml-2.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download17225125971494853773bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/3.4.5/spring-boot-test-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download6946388143297630211bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-test/6.2.6/spring-test-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download17911267587529499446bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/3.4.5/spring-boot-test-autoconfigure-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download11744707018358008792bin
+Downloading https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download11942017236219099286bin
+Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download7629913929768604108bin
+Downloading https://repo.maven.apache.org/maven2/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download9417977257932118802bin
+Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download15691459412237255230bin
+Downloading https://repo.maven.apache.org/maven2/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download16661207385094015210bin
+Downloading https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download8025456512457952948bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/10.20.1/flyway-core-10.20.1.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download14665351384035010407bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-toml/2.18.3/jackson-dataformat-toml-2.18.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download14195694718820676678bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download13518942882780983504bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download4777817115221039274bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download4778628714592876455bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download11070377952021301729bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-database-postgresql/10.20.1/flyway-database-postgresql-10.20.1.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download152703075168584550bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/3.4.5/spring-boot-starter-data-jpa-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download2499088513456790669bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/3.4.5/spring-boot-starter-jdbc-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download5533699483040405312bin
+Downloading https://repo.maven.apache.org/maven2/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download16005725683950929868bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/6.2.6/spring-jdbc-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download3957906962973592476bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/6.2.6/spring-tx-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download1797358243556854682bin
+Downloading https://repo.maven.apache.org/maven2/org/hibernate/orm/hibernate-core/6.6.13.Final/hibernate-core-6.6.13.Final.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download18405711726362958496bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.7.0/classmate-1.7.0.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download1488858290444793324bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/3.4.5/spring-data-jpa-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download9496120840080139090bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/3.4.5/spring-data-commons-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download13927740980827586889bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-orm/6.2.6/spring-orm-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download16513135862962338089bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/6.2.6/spring-aspects-6.2.6.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download13274775753762563698bin
+Downloading https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download15523959219834359325bin
+Downloading https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.5.18/logback-parent-1.5.18.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download15280828419664339566bin
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.3/junit-bom-5.10.3.pom, /Users/leon.ehaus/.m2/repository/org/junit/junit-bom/5.10.3/junit-bom-5.10.3.pom]
+Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.15.11/byte-buddy-parent-1.15.11.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download11721953224897904286bin
+Downloading https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-parent/2.10.0/xmlunit-parent-2.10.0.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download13532106892470140193bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-parent/10.20.1/flyway-parent-10.20.1.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download1974268411016633290bin
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformats-text/2.18.3/jackson-dataformats-text-2.18.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download6324706962596520640bin
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom, /Users/leon.ehaus/.m2/repository/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom]
+Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-modules-java8/2.18.3/jackson-modules-java8-2.18.3.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download10899680781601502491bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa-parent/3.4.5/spring-data-jpa-parent-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download8802438952930028022bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/3.4.5/spring-data-parent-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download15779022437007513047bin
+Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/3.4.5/spring-data-build-3.4.5.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download5701765625443971073bin
+Excluding []
+Excluding []
+Downloading https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.38/lombok-1.18.38.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download200900831327965728bin
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test']
+Tasks that were excluded: []
+Resolve mutations for :compileJava (Thread[#514,Execution worker,5,main]) started.
+:compileJava (Thread[#514,Execution worker,5,main]) started.
+> Task :compileJava
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-database-postgresql/11.3.4/flyway-database-postgresql-11.3.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download14441154705842818368bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/11.3.4/flyway-core-11.3.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download11505669018291484712bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-parent/11.3.4/flyway-parent-11.3.4.pom to /Users/leon.ehaus/.gradle/.tmp/gradle_download1844285695491134148bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-database-postgresql/11.3.4/flyway-database-postgresql-11.3.4.jar to /Users/leon.ehaus/.gradle/.tmp/gradle_download5720705682575349424bin
+Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/11.3.4/flyway-core-11.3.4.jar to /Users/leon.ehaus/.gradle/.tmp/gradle_download8172243045010186929bin
+Custom actions are attached to task ':compileJava'.
+Caching disabled for task ':compileJava' because:
+  Build cache is disabled
+Task ':compileJava' is not up-to-date because:
+  One or more additional actions for task ':compileJava' have changed.
+The input changes require a full rebuild for incremental task ':compileJava'.
+Compilation mode: in-process compilation
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/Users/leon.ehaus/.sdkman/candidates/java/21.0.3-tem'.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.0 secs.
+Created classpath snapshot for incremental compilation in 1.484 secs.
+Resolve mutations for :processResources (Thread[#514,Execution worker,5,main]) started.
+:processResources (Thread[#514,Execution worker,5,main]) started.
+> Task :processResources UP-TO-DATE
+Caching disabled for task ':processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':processResources' as it is up-to-date.
+Resolve mutations for :classes (Thread[#514,Execution worker,5,main]) started.
+:classes (Thread[#514,Execution worker,5,main]) started.
+> Task :classes
+Skipping task ':classes' as it has no actions.
+Resolve mutations for :compileTestJava (Thread[#514,Execution worker,5,main]) started.
+:compileTestJava (Thread[#514,Execution worker,5,main]) started.
+> Task :compileTestJava FAILED
+Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar to /Users/leon.ehaus/.gradle/.tmp/gradle_download11724625972734291169bin
+Custom actions are attached to task ':compileTestJava'.
+Caching disabled for task ':compileTestJava' because:
+  Build cache is disabled
+Task ':compileTestJava' is not up-to-date because:
+  One or more additional actions for task ':compileTestJava' have changed.
+The input changes require a full rebuild for incremental task ':compileTestJava'.
+Compilation mode: in-process compilation
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/Users/leon.ehaus/.sdkman/candidates/java/21.0.3-tem'.
+Compiling with JDK Java compiler API.
+/Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase/src/test/java/com/example/hibernateshowcase/services/UserServiceTest.java:29: Fehler: Symbol nicht gefunden
+    Collection<?> managedEntities = session.getManagedEntities();
+                                           ^
+  Symbol: Methode getManagedEntities()
+  Ort: Variable session von Typ Session
+1 Fehler
+[Incubating] Problems report is available at: file:///Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase/build/reports/problems/problems-report.html
+FAILURE: Build failed with an exception.
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Compilation failed; see the compiler output below.
+  /Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase/src/test/java/com/example/hibernateshowcase/services/UserServiceTest.java:29: Fehler: Symbol nicht gefunden
+      Collection<?> managedEntities = session.getManagedEntities();
+                                             ^
+    Symbol: Methode getManagedEntities()
+    Ort: Variable session von Typ Session
+  1 Fehler
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+BUILD FAILED in 14s
+3 actionable tasks: 2 executed, 1 up-to-date
+Watched directory hierarchies: [/Users/leon.ehaus/IdeaProjects/hibernate-showcase/hibernate-showcase]

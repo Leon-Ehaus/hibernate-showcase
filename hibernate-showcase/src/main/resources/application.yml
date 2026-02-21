@@ -1,0 +1,35 @@
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+spring:
+  application:
+    name: hibernate-showcase
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+  datasource:
+    name: DataSource
+    url: jdbc:postgresql://localhost:3333/hibernate-showcase?currentSchema=db
+    driver-class-name: org.postgresql.Driver
+    username: test
+    password: test
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 35
+      allow-pool-suspension: true
+  flyway:
+    default-schema: extensions
+    schemas: extensions,db
+    fail-on-missing-locations: true
+    baseline-on-migrate: true
+    validate-on-migrate: true
+    create-schemas: true
+    connect-retries: 3
+    connect-retries-interval: 10s
+    out-of-order: true
+    clean-disabled: false
+    locations: classpath:db/migration
+    enabled: true

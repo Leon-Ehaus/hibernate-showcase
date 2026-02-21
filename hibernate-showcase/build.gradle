@@ -1,0 +1,43 @@
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '3.5.9'
+  id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+description = 'hibernate-showcase'
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
+}
+
+configurations {
+  compileOnly {
+    extendsFrom annotationProcessor
+  }
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'org.flywaydb:flyway-core:11.7.0'
+  implementation 'org.flywaydb:flyway-database-postgresql:11.7.0'
+  implementation 'org.springframework.boot:spring-boot-starter:3.5.9'
+  implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.5.9'
+  compileOnly 'org.projectlombok:lombok'
+  runtimeOnly 'org.postgresql:postgresql'
+  annotationProcessor 'org.projectlombok:lombok'
+
+  testImplementation "org.testcontainers:postgresql:1.20.6"
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+  useJUnitPlatform()
+}
