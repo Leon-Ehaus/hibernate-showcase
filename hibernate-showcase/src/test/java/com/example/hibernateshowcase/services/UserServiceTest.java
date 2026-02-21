@@ -4,6 +4,8 @@ import com.example.hibernateshowcase.repositories.PostRepository;
 import com.example.hibernateshowcase.repositories.UserRepository;
 import jakarta.persistence.EntityManager;
 import org.hibernate.LazyInitializationException;
+import org.hibernate.Session;
+import org.hibernate.stat.Statistics;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,10 +26,15 @@ class UserServiceTest {
   @Autowired
   EntityManager entityManager;
 
+  private Statistics getStatistics() {
+    return entityManager.unwrap(Session.class).getSessionFactory().getStatistics();
+  }
+
   @BeforeEach
   void init() {
     postRepository.deleteAll();
     userRepository.deleteAll();
+    getStatistics().clear();
   }
 
   @Test
@@ -53,8 +60,11 @@ class UserServiceTest {
     userService.addPostToUser(user2.getId(), "post3");
     userService.addPostToUser(user3.getId(), "post4");
 
+    getStatistics().clear();
     var users = userService.getAllUsersAndLogAllTheirPosts();
     assertThat(users).hasSize(3);
+    // 1 query to get all users, plus 3 queries to get posts for each user (N+1)
+    assertThat(getStatistics().getPrepareStatementCount()).isEqualTo(4);
   }
 
   @Test
@@ -68,9 +78,12 @@ class UserServiceTest {
     userService.addPostToUser(user2.getId(), "post3");
     userService.addPostToUser(user3.getId(), "post4");
 
+    getStatistics().clear();
     // This uses one query due to join fetch, and posts are already loaded
     var users = userService.getAllUsersAndLogAllTheirPostsJoinFetch();
     assertThat(users).hasSize(3);
+    // Only 1 query to get users and their posts
+    assertThat(getStatistics().getPrepareStatementCount()).isOne();
   }
 
   @Test
