@@ -1,5 +1,7 @@
 package com.example.hibernateshowcase.services;
 
+import java.util.List;
+
 import com.example.hibernateshowcase.repositories.PostRepository;
 import com.example.hibernateshowcase.repositories.UserRepository;
 import jakarta.persistence.EntityManager;
@@ -95,6 +97,18 @@ class UserServiceTest {
 
     var newJavaObject = userService.getUserById(user.getId());
     assertThatThrownBy(() -> newJavaObject.getPosts().getFirst().getTitle()).isInstanceOf(LazyInitializationException.class);
+  }
+
+  @Test
+  public void test_lazy_loading_exception_transient_object() {
+    var user = userService.saveNewUser("user");
+
+    userService.addPostToUser(user.getId(), "post1");
+    userService.addPostToUser(user.getId(), "post2");
+
+    var userEntity = userRepository.findById(user.getId()).orElseThrow();
+
+    assertThatThrownBy(() -> userService.printAllUsersWithPosts(List.of(userEntity))).isInstanceOf(LazyInitializationException.class);
   }
 
 }

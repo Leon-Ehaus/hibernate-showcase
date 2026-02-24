@@ -62,7 +62,8 @@ public class UserService {
     return all;
   }
 
-  private void printAllUsersWithPosts(List<UserEntity> users) {
+  @Transactional(readOnly = true)
+  public void printAllUsersWithPosts(List<UserEntity> users) {
     users.stream()
       .map(UserEntity::getPosts)
       .flatMap(Collection::stream)
