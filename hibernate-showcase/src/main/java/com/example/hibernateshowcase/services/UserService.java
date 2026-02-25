@@ -11,6 +11,7 @@ import com.example.hibernateshowcase.repositories.UserRepository;
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.internal.SessionImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,13 +25,15 @@ public class UserService {
 
   @Transactional
   public UserEntity saveNewUser(String name) {
+    var session = entityManager.unwrap(SessionImpl.class);
     //create a new transient entity
     var build = UserEntity.builder()
       .name(name)
       .build();
-
+    log.info("Entity is not managed (transient): {}", session.contains(build));
     //after persisting, the entity will be managed by the persistence context
     var user = userRepository.save(build);
+    log.info("Entity is managed: {}", session.contains(user));
 
     //after leaving the transactional method, the entity will be detached from the persistence context
     return user;
