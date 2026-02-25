@@ -1,6 +1,7 @@
 package com.example.hibernateshowcase.repositories;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 import com.example.hibernateshowcase.entities.UserEntity;
@@ -14,6 +15,9 @@ public interface UserRepository extends JpaRepository<UserEntity, UUID> {
 
   @Query("SELECT u FROM UserEntity u JOIN FETCH u.posts")
   List<UserEntity> findAllWithPosts();
+
+  @Query("SELECT u FROM UserEntity u JOIN FETCH u.posts WHERE u.id = :id")
+  Optional<UserEntity> findUserByIdWithPosts(UUID id);
 
   @EntityGraph(attributePaths = {"posts"})
   @Query("SELECT u FROM UserEntity u")

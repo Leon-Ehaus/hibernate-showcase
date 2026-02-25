@@ -46,5 +46,12 @@ class DirtyCheckingTest {
       .singleElement()
       .satisfies(user -> assertThat(user.getName()).isEqualTo("updated"));
   }
+  @Test
+  public void test_flush_on_select(){
+    var user = userService.saveNewUser("test");
+    userService.addPostToUser(user.getId(), "post");
+    var post = postRepository.findAll().getFirst();
+    userService.updatePostAndReturnUser(post.getId(), user.getId(), "updated");
+  }
 
 }

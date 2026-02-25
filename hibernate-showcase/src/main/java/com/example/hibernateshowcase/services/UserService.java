@@ -89,4 +89,13 @@ public class UserService {
   public UserEntity getUserById(UUID userId) {
     return userRepository.findById(userId).orElseThrow();
   }
+
+  @Transactional
+  public UserEntity updatePostAndReturnUser(UUID postId, UUID userId, String newPostTitle) {
+    var post = postRepository.findById(postId).orElseThrow();
+    post.setTitle(newPostTitle);
+    postRepository.save(post);
+    var user = userRepository.findUserByIdWithPosts(userId).orElseThrow();
+    return user;
+  }
 }
