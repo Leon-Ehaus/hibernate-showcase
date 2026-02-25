@@ -14,6 +14,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.BatchSize;
 
 @Data
 @Builder
@@ -30,6 +31,7 @@ public class UserEntity {
   @Column(name = "name")
   String name;
 
+//  @BatchSize(size = 100)
   @OneToMany(mappedBy = "author")
   List<PostEntity> posts;
 }

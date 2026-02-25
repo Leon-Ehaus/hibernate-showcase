@@ -91,4 +91,22 @@ class NPlusOneTest {
     assertThat(getStatistics().getPrepareStatementCount()).isOne();
   }
 
+  @Test
+  public void test_batch_size() {
+    var user1 = userService.saveNewUser("user1");
+    var user2 = userService.saveNewUser("user2");
+    var user3 = userService.saveNewUser("user3");
+
+    userService.addPostToUser(user1.getId(), "post1");
+    userService.addPostToUser(user1.getId(), "post2");
+    userService.addPostToUser(user2.getId(), "post3");
+    userService.addPostToUser(user3.getId(), "post4");
+
+    getStatistics().clear();
+    var users = userService.getAllUsersAndLogAllTheirPosts();
+    assertThat(users).hasSize(3);
+    // 1 query to get all users, plus 1 queries to get the posts for the first 100 users
+    assertThat(getStatistics().getPrepareStatementCount()).isEqualTo(2);
+  }
+
 }
