@@ -44,11 +44,6 @@ public class UserService {
   }
 
   @Transactional(readOnly = true)
-  public List<UserEntity> getAllUsers() {
-    return userRepository.findAll();
-  }
-
-  @Transactional(readOnly = true)
   public List<UserEntity> getAllUsersAndLogAllTheirPosts() {
     var all = userRepository.findAll();
     printAllUsersWithPosts(all);
@@ -58,6 +53,13 @@ public class UserService {
   @Transactional(readOnly = true)
   public List<UserEntity> getAllUsersAndLogAllTheirPostsJoinFetch() {
     var all = userRepository.findAllWithPosts();
+    printAllUsersWithPosts(all);
+    return all;
+  }
+
+  @Transactional(readOnly = true)
+  public List<UserEntity> getAllUsersAndLogAllTheirPostsEntityGraph() {
+    var all = userRepository.findAllWithPostsUsingEntityGraph();
     printAllUsersWithPosts(all);
     return all;
   }

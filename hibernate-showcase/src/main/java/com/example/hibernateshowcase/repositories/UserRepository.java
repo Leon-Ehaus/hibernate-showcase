@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.UUID;
 
 import com.example.hibernateshowcase.entities.UserEntity;
+import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -13,4 +14,8 @@ public interface UserRepository extends JpaRepository<UserEntity, UUID> {
 
   @Query("SELECT u FROM UserEntity u JOIN FETCH u.posts")
   List<UserEntity> findAllWithPosts();
+
+  @EntityGraph(attributePaths = {"posts"})
+  @Query("SELECT u FROM UserEntity u")
+  List<UserEntity> findAllWithPostsUsingEntityGraph();
 }
