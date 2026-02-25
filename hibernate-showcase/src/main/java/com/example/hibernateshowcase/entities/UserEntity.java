@@ -1,6 +1,6 @@
 package com.example.hibernateshowcase.entities;
 
-import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 import jakarta.persistence.Column;
@@ -12,6 +12,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -23,6 +24,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "users")
+@EqualsAndHashCode(of = "name")
 public class UserEntity {
 
   @Id
@@ -32,7 +34,7 @@ public class UserEntity {
   @Column(name = "name")
   String name;
 
-//  @BatchSize(size = 100)
+  //  @BatchSize(size = 100)
   @OneToMany(mappedBy = "author")
-  List<PostEntity> posts;
+  Set<PostEntity> posts;
 }

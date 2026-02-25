@@ -47,7 +47,7 @@ class LazyLoadingTest {
 
     var newJavaObject = userService.getUserById(user.getId());
     assertThatThrownBy(() -> newJavaObject.getPosts()
-      .getFirst()
+      .stream().findAny().orElseThrow()
       .getTitle()).isInstanceOf(LazyInitializationException.class);
   }
 
